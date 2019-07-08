@@ -4,6 +4,10 @@ body {
 h1 { 
   color: white 
 } 
-.navigation { 
+ul {
+  list-style-type: none
+  margin: 0
+  padding: 0
   color: white
-} 
+}
+
