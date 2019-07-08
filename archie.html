@@ -42,6 +42,14 @@
        document.getElementById("image").style.width = "398px";
        document.getElementById("image").style.height = "400px";
     } 
+      function allAboutMe() { 
+        var x = document.getElementById("button_text");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+     }
   </script>
   <body> 
     <ul>
@@ -52,4 +60,6 @@
     </ul>
     <h1> All About Archie! </h1>
     <img id="image" src="https://dumielauxepices.net/sites/default/files/drawn-violin-wallpaper-584898-9066248.jpg" style="width:398px; height: 400px;" alt="Violin" onmouseover="imageFunctionA()" onmouseout="imageFunctionB()"/>
+    <button onclick="allAboutMe()">Click to learn more about me!</button>
+    <p id="button_text" style="color:white;"> Hello! I'm Archishma (Archie). </p>
 </html> 
