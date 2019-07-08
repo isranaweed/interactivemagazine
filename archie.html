@@ -43,7 +43,6 @@
           x.style.display = "none";
         }
      }
-    x.style.display = "none"; 
      function imageFunctionA() { 
      document.getElementById("image").style.width = "498px";
      document.getElementById("image").style.height = "500px"; 
@@ -63,5 +62,5 @@
     <h1> All About Archie! </h1>
     <img id="image" src="https://dumielauxepices.net/sites/default/files/drawn-violin-wallpaper-584898-9066248.jpg" style="width:398px; height: 400px;" alt="Violin" onmouseover="imageFunctionA()" onmouseout="imageFunctionB()"/>
     <button onclick="allAboutMe()">Click to learn more about me!</button>
-    <p id="button_text" style="color:white;"> Hello! I'm Archishma (Archie). </p>
+    <p id="button_text" style="color:white;" onload="x.style.display = 'none';"> Hello! I'm Archishma (Archie). </p>
 </html> 
