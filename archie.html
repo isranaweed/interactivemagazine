@@ -34,7 +34,15 @@
     }
   </style> 
   <script>
-    var x = document.getElementById("button_text");
+    var x; 
+    function allAboutMe() { 
+      var x = document.getElementById("button_text"); 
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+     }
     x.style.display = "none"; 
      function imageFunctionA() { 
      document.getElementById("image").style.width = "498px";
@@ -44,13 +52,6 @@
        document.getElementById("image").style.width = "398px";
        document.getElementById("image").style.height = "400px";
     } 
-      function allAboutMe() { 
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-     }
   </script>
   <body> 
     <ul>
