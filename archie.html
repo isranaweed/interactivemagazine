@@ -34,7 +34,7 @@
     }
   </style> 
   <script>
-    var x; 
+    var x = document.getElementById("button_text");
     x.style.display = "none"; 
      function imageFunctionA() { 
      document.getElementById("image").style.width = "498px";
@@ -45,7 +45,6 @@
        document.getElementById("image").style.height = "400px";
     } 
       function allAboutMe() { 
-        var x = document.getElementById("button_text");
         if (x.style.display === "none") {
           x.style.display = "block";
         } else {
