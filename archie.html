@@ -47,7 +47,11 @@
           x.style.display = "block";
           x.style.color = "white"; 
         } else {
-          x.style.display = "none";
+          if (x.style.color === "deeppink") { 
+            x.style.color = "white"; 
+          } else { 
+            x.style.display = "none";
+          } 
         }
      }
      function imageFunctionA() { 
