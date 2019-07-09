@@ -32,6 +32,12 @@
     li a:hover {
       background-color: mediumvioletred;
     }
+    .button {  
+      width: 200px; 
+      height: 100px; 
+      font-size: 25px; 
+      font-family: Times New Roman; 
+    }
   </style> 
   <script>
     var x; 
@@ -61,8 +67,12 @@
       <li><a href="about.asp">About</a></li>
     </ul>
     <h1> All About Archie! </h1>
-    <img id="image" src="https://dumielauxepices.net/sites/default/files/drawn-violin-wallpaper-584898-9066248.jpg" style="width:398px; height: 400px;" alt="Violin" onmouseover="imageFunctionA()" onmouseout="imageFunctionB()"/>
-    <p> </p>
-    <button onclick="allAboutMe()"> Click to learn more about me!</button>
-    <p id="button_text" style="color:deeppink;"> Hello! I'm Archishma (Archie). I'm a rising sophomore at Wheeler High School. I love to draw, paint, and read. I especially love to sing and play the violin. I have a sister who is 11 years younger than me! </p>
+    <div style="text-align:center;"> 
+    <button class="button" onload="x.style.display='none'" onclick="allAboutMe()" style="float:center;"> Click to learn more about me!</button> 
+    </div> 
+    <p id="button_text" style="color:deeppink; text-align:center; font-size: 20px;"> Hello! I'm Archishma (Archie). I'm a rising sophomore at Wheeler High School. I have many hobbies, including drawing, playing the violin, and programming, of course! I have a sister who is <b> 11 years younger </b> than me. </p>
+    <div style="text-align:center;">
+      <img id="image" src="https://dumielauxepices.net/sites/default/files/drawn-violin-wallpaper-584898-9066248.jpg" style="width:398px; height: 400px;" alt="Violin" onmouseover="imageFunctionA()" onmouseout="imageFunctionB()"/>
+    </div> 
+  </body> 
 </html> 
