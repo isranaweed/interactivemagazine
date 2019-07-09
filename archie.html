@@ -43,17 +43,11 @@
     var x; 
     function allAboutMe() { 
       var x = document.getElementById("button_text"); 
-        if (x.style.display === "none") {
-          x.style.display = "block";
-          x.style.color = "white"; 
-        } else {
-          if (x.style.color === "deeppink") { 
-            x.style.color = "white"; 
-          } else { 
-            x.style.display = "none";
-          } 
-        }
-     }
+        if (x.style.color === "deeppink") { 
+          x.style.color = "white";  
+        } else { 
+          x.style.color = "deeppink"; 
+        } 
      function imageFunctionA() { 
      document.getElementById("image").style.width = "498px";
      document.getElementById("image").style.height = "500px"; 
